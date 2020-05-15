@@ -131,6 +131,7 @@ void run(domin &a,SDL_Event e,SDL_Renderer* Renderer){
                 }
                 if (ketqua==true){
                     e.type=SDL_MOUSEBUTTONUP;
+                    delete a.mang1;delete a.mang2; delete a.mang3;
                     taogame(a,Renderer,SCREEN_WIDTH,SCREEN_HEIGHT);
                     run(a,e,Renderer);
                 }
@@ -196,18 +197,21 @@ void run(domin &a,SDL_Event e,SDL_Renderer* Renderer){
             if(u>0 && u<100 && v>0 && v<30){
                 e.type=SDL_MOUSEBUTTONUP;
                 a.hang=8;a.cot=8;a.sobom=10;
+                delete a.mang1;delete a.mang2; delete a.mang3;
                 taogame(a,Renderer,SCREEN_WIDTH,SCREEN_HEIGHT);
                 run(a,e,Renderer);
             }
             if(u>0 && u<100 && v>30 && v<60){
                 e.type=SDL_MOUSEBUTTONUP;
                 a.hang=14;a.cot=14;a.sobom=30;
+                delete a.mang1;delete a.mang2; delete a.mang3;
                 taogame(a,Renderer,SCREEN_WIDTH,SCREEN_HEIGHT);
                 run(a,e,Renderer);
             }
             if(u>0 && u<100 && v>60 && v<90){
                 e.type=SDL_MOUSEBUTTONUP;
                 a.hang=20;a.cot=20;a.sobom=70;
+                delete a.mang1;delete a.mang2; delete a.mang3;
                 taogame(a,Renderer,SCREEN_WIDTH,SCREEN_HEIGHT);
                 run(a,e,Renderer);
             }
